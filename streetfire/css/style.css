@@ -329,8 +329,14 @@ button:focus{
 	background-size: cover;
 }
 .about-section-box .img-fluid{
-	box-shadow: 20px 20px 0px #d65106;
+    transition: 0.3s;
+    border-radius: 20px;
+    overflow: hidden;
 }
+.about-section-box .img-fluid:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+} 
 .inner-column{
 	text-align: left;
 }
@@ -389,11 +395,13 @@ button:focus{
 /*------------------------------------------------------------------
     Menu
 -------------------------------------------------------------------*/
-
-.menu-box{
-	padding: 70px 0px;
+.menu img{
+    width: 100%;
+    height: 220px ;
+    opacity: 0.9;
+    transition: all 0.5s ease; 
+    border-radius:7px ;
 }
-
 .heading-title{
 	margin-bottom: 50px;
 }
@@ -409,7 +417,6 @@ button:focus{
 	margin: 0px;
 }
 
-.inner-menu-box{}
 .inner-menu-box .nav-pills .nav-link.active{
 	background: #d65106;
 }
@@ -445,13 +452,14 @@ button:focus{
 }
 .why-text h4{
 	color: #ffffff;
-	font-size: 16px;
+	font-size: 20px;
+    letter-spacing: 1px;
 	font-weight: 500;
 	font-family: 'Rubik', sans-serif;
 }
 .why-text p{
 	color: #ffffff;
-	font-size: 13px;
+	font-size: 14px;
 	border-bottom: 1px dashed #010101;
 	margin: 0px;
 	padding-bottom: 15px;
@@ -459,7 +467,7 @@ button:focus{
 	margin-bottom: 15px;
 }
 .why-text h5{
-	font-size: 18px;
+	font-size: 16px;
 	font-weight: 600;
 	color: #ffffff;
 }
